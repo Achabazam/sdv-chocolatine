@@ -15,4 +15,4 @@ jobs:
       run: docker build . --file Dockerfile --tag chocolatine:$(date +%s) --tag chocolatine:latest
 
     - name: Testing
-      run docker run -t chocolatine:latest php /app/bin/phpunit
+      run: docker run -t chocolatine:latest php /app/bin/phpunit
